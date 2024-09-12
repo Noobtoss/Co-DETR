@@ -1,6 +1,6 @@
 _base_ = [
     'co_deformable_detr_r50_1x_coco.py'
-]
+]  # REMINDER
 # model settings
 num_dec_layer = 6
 lambda_2 = 2.0

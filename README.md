@@ -88,6 +88,30 @@ In this paper, we present a novel collaborative hybrid assignments training sche
 ## Running
 
 ### Install
+
+```bash
+conda create -n Co_DETR python=3.7.11
+conda activate Co_DETR
+```
+
+```bash
+conda install cudatoolkit=11.3
+```
+
+```bash
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+```
+
+```bash
+pip install mmcv-full==1.5.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html
+pip install mmdet==2.25.3
+```
+
+```bash
+pip install -r requirements.txt
+pip install yapf==0.32.0
+```
+
 We implement Co-DETR using [MMDetection V2.25.3](https://github.com/open-mmlab/mmdetection/releases/tag/v2.25.3) and [MMCV V1.5.0](https://github.com/open-mmlab/mmcv/releases/tag/v1.5.0).
 The source code of MMdetection has been included in this repo and you only need to build MMCV following [official instructions](https://github.com/open-mmlab/mmcv/tree/v1.5.0#installation).
 We test our models under ```python=3.7.11,pytorch=1.11.0,cuda=11.3```. Other versions may not be compatible. 

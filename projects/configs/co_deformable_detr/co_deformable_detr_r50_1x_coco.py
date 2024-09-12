@@ -1,7 +1,7 @@
 _base_ = [
     '../_base_/datasets/coco_detection.py',
     '../_base_/default_runtime.py'
-]
+] # REMINDER
 # model settings
 num_dec_layer = 6
 lambda_2 = 2.0
